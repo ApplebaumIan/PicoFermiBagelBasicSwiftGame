@@ -128,6 +128,17 @@ class Bagels {
 		}
 	}
 	
+	/// Console gets sassy if you take too many tries to win
+	/// - Parameter numberOfGuesses: number of times the player guessed a number
+	fileprivate func snarkyGameWinText(_ numberOfGuesses: Int) {
+		if numberOfGuesses > 3{
+			print("Congratulations YOU WON! Only took you \(numberOfGuesses) tries! 😜")
+		}
+		else if numberOfGuesses < 3{
+			print("WOW! YOU WON in just \(numberOfGuesses) guesses!")
+		}
+	}
+	
 	/**
 	1. Generate the secret number
 	2. Determine whether the current guess is a winner
@@ -144,8 +155,10 @@ class Bagels {
 		let randomNumber = generateRandomNumber()
 		var guess = number(first: 0, second: 0, Third: 0)
 		var result = ""
+		var numberOfGuesses = 0
 		print("Guess a number!")
 		repeat{
+			numberOfGuesses += 1
 			result = ""
 			getUserGuess(&guess)
 			checkFirstGuess(guess, randomNumber, &result)
@@ -153,7 +166,7 @@ class Bagels {
 			checkThirdGuess(guess, randomNumber, &result)
 			print(result)
 		}while (guess != randomNumber)
-		print("Congratulations YOU WON!")
+		snarkyGameWinText(numberOfGuesses)
 		wouldYouliketoplayagain()
 	}
 	/// Simple Enum for yes or no responses
