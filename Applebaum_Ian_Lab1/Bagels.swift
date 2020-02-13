@@ -120,7 +120,7 @@ class Bagels {
 		case .yes:
 			playGame()
 		case .no:
-			print("Goodbye!")
+			print("Thanks for playing!")
 			exit(1)
 		default:
 			print("Oops try again?")
