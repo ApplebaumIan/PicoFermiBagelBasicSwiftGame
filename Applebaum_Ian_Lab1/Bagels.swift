@@ -153,7 +153,7 @@ class Bagels {
 			checkThirdGuess(guess, randomNumber, &result)
 			print(result)
 		}while (guess != randomNumber)
-		print("Congradulations YOU WON!")
+		print("Congratulations YOU WON!")
 		wouldYouliketoplayagain()
 	}
 	/// Simple Enum for yes or no responses
