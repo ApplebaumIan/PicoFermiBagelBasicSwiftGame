@@ -111,16 +111,40 @@ class Bagels {
 		}
 	}
 	
+	/// Asks the player if they would like to play again. 1 for yes. 0 for no.
+	fileprivate func wouldYouliketoplayagain() {
+		print("Would you like to play again?\nYes!(1)\nNo(0)")
+		let keyboad = readLine(strippingNewline: true) ?? ""
+		let response: responses = responses(rawValue: Int(keyboad)!)!
+		switch response {
+		case .yes:
+			playGame()
+		case .no:
+			print("Goodbye!")
+			exit(1)
+		default:
+			print("Oops try again?")
+			wouldYouliketoplayagain()
+		}
+	}
+	
 	/**
 	1. Generate the secret number
 	2. Determine whether the current guess is a winner
 	3. Evaluate the current guess and print hints
 	*/
 	public func playGame(){
-		print("WELCOME")
+		print("WELCOME enter a three digit number such as 123.\nDo not enter any 0s!\nIf you guess the same number as me you win!\nI'll give you hints along the way.\nIf you guess a number right I'll say FERMI!\nIf you get a number right but out of order I'll say PICO.\nIf you just don't get it I'll say BAGEL!")
+		print("Lets begin!")
+		var stars = ""
+		for star in 0...100{
+			stars.append("*")
+		}
+		print(stars)
 		let randomNumber = generateRandomNumber()
 		var guess = number(first: 0, second: 0, Third: 0)
 		var result = ""
+		print("Guess a number!")
 		repeat{
 			result = ""
 			getUserGuess(&guess)
@@ -129,6 +153,13 @@ class Bagels {
 			checkThirdGuess(guess, randomNumber, &result)
 			print(result)
 		}while (guess != randomNumber)
+		print("Congradulations YOU WON!")
+		wouldYouliketoplayagain()
+	}
+	/// Simple Enum for yes or no responses
+	enum responses:Int {
+		case no
+		case yes
 	}
 	/// generates the random `number` for the game. Returning struct `number`
 	private func generateRandomNumber()->number{
