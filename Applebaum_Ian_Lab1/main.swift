@@ -8,5 +8,7 @@
 
 import Foundation
 
-print("Hello, World!")
+//print("Hello, World!")
+let game = Bagels()
+game.playGame()
 

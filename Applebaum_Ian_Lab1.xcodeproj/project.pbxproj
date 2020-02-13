@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		673C4D6E23F5B17800EBE8BC /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673C4D6D23F5B17800EBE8BC /* main.swift */; };
+		673C4D7523F5B8C900EBE8BC /* Bagels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673C4D7423F5B8C900EBE8BC /* Bagels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		673C4D6A23F5B17800EBE8BC /* Applebaum_Ian_Lab1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Applebaum_Ian_Lab1; sourceTree = BUILT_PRODUCTS_DIR; };
 		673C4D6D23F5B17800EBE8BC /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		673C4D7423F5B8C900EBE8BC /* Bagels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bagels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				673C4D6D23F5B17800EBE8BC /* main.swift */,
+				673C4D7423F5B8C900EBE8BC /* Bagels.swift */,
 			);
 			path = Applebaum_Ian_Lab1;
 			sourceTree = "<group>";
@@ -121,6 +124,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				673C4D6E23F5B17800EBE8BC /* main.swift in Sources */,
+				673C4D7523F5B8C900EBE8BC /* Bagels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
