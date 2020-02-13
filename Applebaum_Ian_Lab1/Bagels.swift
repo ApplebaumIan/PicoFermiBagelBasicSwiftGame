@@ -115,7 +115,7 @@ class Bagels {
 	fileprivate func wouldYouliketoplayagain() {
 		print("Would you like to play again?\nYes!(1)\nNo(0)")
 		let keyboad = readLine(strippingNewline: true) ?? ""
-		let response: responses = responses(rawValue: Int(keyboad)!)!
+		let response: responses = responses(rawValue: Int(keyboad) ?? 3) ?? .oops
 		switch response {
 		case .yes:
 			playGame()
@@ -137,7 +137,7 @@ class Bagels {
 		print("WELCOME enter a three digit number such as 123.\nDo not enter any 0s!\nIf you guess the same number as me you win!\nI'll give you hints along the way.\nIf you guess a number right I'll say FERMI!\nIf you get a number right but out of order I'll say PICO.\nIf you just don't get it I'll say BAGEL!")
 		print("Lets begin!")
 		var stars = ""
-		for star in 0...100{
+		for _ in 0...100{
 			stars.append("*")
 		}
 		print(stars)
@@ -160,6 +160,7 @@ class Bagels {
 	enum responses:Int {
 		case no
 		case yes
+		case oops
 	}
 	/// generates the random `number` for the game. Returning struct `number`
 	private func generateRandomNumber()->number{
