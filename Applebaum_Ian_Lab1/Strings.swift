@@ -7,6 +7,7 @@
 //
 
 import Foundation
+///Classic string manipulation
 extension String {
 
     var length: Int {
