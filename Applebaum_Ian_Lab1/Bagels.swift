@@ -8,6 +8,23 @@
 
 import Foundation
 class Bagels {
+	/// `number` is our struct for comparison. `number` has a `first`, `second`, and `third` value to be compared.
+	/**
+	Player's guess:
+	~~~
+	var guess = number(first: 3, second: 2, Third: 1)
+	~~~
+	The computer could generate a number for comparison:
+	~~~
+	var randomNumber = number(first: 4, second: 5, Third: 6)
+	~~~
+	These can be compared simply by
+	~~~
+	if guess == randomNumber{
+		print("numbers match")
+	}
+	~~~
+	*/
 	struct number: Equatable {
 		var first:Int
 		var second:Int
