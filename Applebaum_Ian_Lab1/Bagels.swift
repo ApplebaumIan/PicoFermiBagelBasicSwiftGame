@@ -8,11 +8,74 @@
 
 import Foundation
 class Bagels {
-	struct number {
+	struct number: Equatable {
 		var first:Int
 		var second:Int
 		var Third:Int
+		static func == (lhs: number, rhs: number) -> Bool {
+			return lhs.first == rhs.first && lhs.second == rhs.second && lhs.Third == rhs.Third
+		}
 	}
+	fileprivate func checkFirstGuess(_ guess: Bagels.number, _ randomNumber: Bagels.number, _ result: inout String) {
+		switch guess.first {
+		case randomNumber.first:
+			result.append("FERMI")
+		case randomNumber.second:
+			result.append("PICO")
+		case randomNumber.Third:
+			result.append("PICO")
+		default:
+			result.append("BAGELS")
+		}
+	}
+	fileprivate func checkSecondGuess(_ guess: Bagels.number, _ randomNumber: Bagels.number, _ result: inout String) {
+		switch guess.second {
+		case randomNumber.second:
+			result.append(" FERMI")
+		case randomNumber.first:
+			result.append(" PICO")
+		case randomNumber.Third:
+			result.append(" PICO")
+		default:
+			result.append(" BAGELS")
+		}
+	}
+	fileprivate func checkThirdGuess(_ guess: Bagels.number, _ randomNumber: Bagels.number, _ result: inout String) {
+		switch guess.Third {
+		case randomNumber.Third:
+			result.append(" FERMI")
+		case randomNumber.second:
+			result.append(" PICO")
+		case randomNumber.first:
+			result.append(" PICO")
+		default:
+			result.append(" BAGELS")
+		}
+	}
+	fileprivate func getUserGuess(_ guess: inout Bagels.number) {
+		let keyboad = readLine(strippingNewline: true) ?? ""
+		let first: Int = Int(keyboad[0]) ?? 0
+		let second: Int = Int(keyboad[1]) ?? 0
+		let third: Int = Int(keyboad[2]) ?? 0
+		guess = number(first: first, second: second, Third: third)
+		if guess == number(first: 0, second: 0, Third: 0){
+			print("000 NOT VALID TRY AGAIN")
+			getUserGuess(&guess)
+		}
+		else if first < 10 {
+			if guess == number(first: first, second: 0, Third: 0){
+				print("\(first)00 NOT VALID TRY AGAIN")
+				getUserGuess(&guess)
+			}
+		}
+		if first < 10 && second < 10 {
+			if guess == number(first: first, second: second, Third: 0){
+				print("\(first)\(second)0 NOT VALID TRY AGAIN")
+				getUserGuess(&guess)
+			}
+		}
+	}
+	
 	public func playGame(){
 		/*
 		1. Generate the secret number
@@ -23,50 +86,14 @@ class Bagels {
 		let randomNumber = generateRandomNumber()
 		var guess = number(first: 0, second: 0, Third: 0)
 		var result = ""
-		while (randomNumber.first != guess.first || randomNumber.second != guess.second || randomNumber.Third != guess.Third) {
-			if guess.first != randomNumber.first{
-				if(guess.first == randomNumber.second){
-					result.append("pico")
-				}
-				else if(guess.first == randomNumber.Third){
-					result.append("pico")
-				}
-				else{
-					result.append("bagels")
-				}
-			}else{
-				result.append("FERMI")
-			}
-			if guess.second != randomNumber.second{
-				if(guess.second == randomNumber.first){
-					result.append("pico")
-				}
-				else if(guess.second == randomNumber.Third){
-					result.append("pico")
-				}
-				else{
-					result.append("bagels")
-				}
-				
-			}else{
-				result.append("FERMI")
-			}
-			if guess.Third != randomNumber.Third {
-				if(guess.Third == randomNumber.first){
-					result.append("pico")
-				}
-				else if(guess.Third == randomNumber.second){
-					result.append("pico")
-				}
-				else{
-					result.append("bagels")
-				}
-			}
-			else{
-				result.append("FERMI")
-			}
-		}
-		print(result)
+		repeat{
+			result = ""
+			getUserGuess(&guess)
+			checkFirstGuess(guess, randomNumber, &result)
+			checkSecondGuess(guess, randomNumber, &result)
+			checkThirdGuess(guess, randomNumber, &result)
+			print(result)
+		}while (guess != randomNumber)
 		
 //		result.append("FERMI FERMI FERMI")
 		/*
@@ -80,6 +107,9 @@ class Bagels {
 		*/
 	}
 	private func generateRandomNumber()->number{
-		return number(first: 0, second: 0, Third: 0)
+		let first = Int.random(in: 1 ..< 10)
+		let second = Int.random(in: 1 ..< 10)
+		let third = Int.random(in: 1 ..< 10)
+		return number(first: first, second: second, Third: third)
 	}
 }
