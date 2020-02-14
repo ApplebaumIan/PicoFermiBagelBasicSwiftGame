@@ -45,17 +45,13 @@ class Bagels {
 		result.append("guess = \(guess.printNumber()), ")
 		switch guess.first {
 		case randomNumber.first:
-//			result.append("FERMI")
 			return .fermi
 		case randomNumber.second:
-//			result.append("PICO")
 			return .pico
 		case randomNumber.Third:
-//			result.append("PICO")
 			return .pico
 		default:
 			return .bagels
-//			result.append("BAGELS")
 		}
 	}
 	/// Checks for the users second guess Int<10
@@ -95,17 +91,13 @@ class Bagels {
 	fileprivate func checkThirdGuess(_ guess: Bagels.number, _ randomNumber: Bagels.number, _ result: inout String) -> hints{
 			switch guess.Third {
 			case randomNumber.Third:
-//				addFermi(&result)
 				return .fermi
 			case randomNumber.second:
-//				addPICO(&result)
 				return .pico
 			case randomNumber.first:
-//				result.append(" PICO")
 				return .pico
 			default:
 				return .bagels
-	//			result.append(" BAGELS")
 			}
 		}
 	
