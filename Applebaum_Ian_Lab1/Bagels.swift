@@ -247,7 +247,7 @@ class Bagels {
 	/// prints pretty stars in the console
 	fileprivate func printStars() {
 		var stars = ""
-		for _ in 0...100{
+		for _ in 0...30{
 			stars.append("⭐️")
 		}
 		print(stars)
