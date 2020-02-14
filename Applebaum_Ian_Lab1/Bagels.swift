@@ -8,6 +8,7 @@
 
 import Foundation
 class Bagels {
+	// MARK: Game data structures
 	/// `number` is our struct for comparison. `number` has a `first`, `second`, and `third` value to be compared.
 	/**
 	Player's guess:
@@ -36,6 +37,27 @@ class Bagels {
 			return "\(first)\(second)\(Third)"
 		}
 	}
+	/// Simple Enum for yes or no responses
+	enum responses:Int {
+		case no
+		case yes
+		case oops
+	}
+	/// The hint to the user
+	enum hints {
+		case fermi
+		case pico
+		case bagels
+	}
+	// MARK: Game setup
+	/// generates the random `number` for the game. Returning struct `number`
+	private func generateRandomNumber()->number{
+		let first = Int.random(in: 1 ..< 10)
+		let second = Int.random(in: 1 ..< 10)
+		let third = Int.random(in: 1 ..< 10)
+		return number(first: first, second: second, Third: third)
+	}
+	// MARK: Game Logic
 	/// Checks for the player's first guess Int<10
 	/// - Parameters:
 	///   - guess: the number the user guessed
@@ -143,35 +165,6 @@ class Bagels {
 		guess = number(first: first, second: second, Third: third)
 		inputErrorTrapping(&guess, first, second)
 	}
-	
-	/// Asks the player if they would like to play again. 1 for yes. 0 for no.
-	fileprivate func wouldYouliketoplayagain() {
-		print("Would you like to play again?\nYes!(1)\nNo(0)")
-		let keyboad = readLine(strippingNewline: true) ?? ""
-		let response: responses = responses(rawValue: Int(keyboad) ?? 3) ?? .oops
-		switch response {
-		case .yes:
-			playGame()
-		case .no:
-			print("Thanks for playing!")
-			exit(1)
-		default:
-			print("Oops try again?")
-			wouldYouliketoplayagain()
-		}
-	}
-	
-	/// Console gets sassy if you take too many tries to win
-	/// - Parameter numberOfGuesses: number of times the player guessed a number
-	fileprivate func snarkyGameWinText(_ numberOfGuesses: Int) {
-		if numberOfGuesses > 3{
-			print("Congratulations YOU WON! Only took you \(numberOfGuesses) tries! 😜")
-		}
-		else if numberOfGuesses < 3{
-			print("WOW! YOU WON in just \(numberOfGuesses) guesses!")
-		}
-	}
-	
 
 	
 	/// checks player's guesses for pico (guessed right number but out of order). If it contains pico then it adds the `hint` to `results`
@@ -221,22 +214,7 @@ class Bagels {
 			addBagels(&result)
 		}
 	}
-	
-	/// prints pretty stars in the console
-	fileprivate func printStars() {
-		var stars = ""
-		for _ in 0...100{
-			stars.append("⭐️")
-		}
-		print(stars)
-	}
-	
-	/// prints welcome and instructions
-	fileprivate func welcome() {
-		print("WELCOME enter a three digit number such as 123.\nDo not enter any 0s!\nIf you guess the same number as me you win!\nI'll give you hints along the way.\nIf you guess a number right I'll say FERMI!\nIf you get a number right but out of order I'll say PICO.\nIf you just don't get it I'll say BAGEL!")
-		print("Lets begin!")
-	}
-	
+	// MARK: Game Play
 	/**
 	1. Generate the secret number
 	2. Determine whether the current guess is a winner
@@ -265,23 +243,49 @@ class Bagels {
 		snarkyGameWinText(numberOfGuesses)
 		wouldYouliketoplayagain()
 	}
-	/// Simple Enum for yes or no responses
-	enum responses:Int {
-		case no
-		case yes
-		case oops
+	
+	/// prints pretty stars in the console
+	fileprivate func printStars() {
+		var stars = ""
+		for _ in 0...100{
+			stars.append("⭐️")
+		}
+		print(stars)
 	}
-	/// The hint to the user
-	enum hints {
-		case fermi
-		case pico
-		case bagels
+	
+	/// prints welcome and instructions
+	fileprivate func welcome() {
+		print("WELCOME enter a three digit number such as 123.\nDo not enter any 0s!\nIf you guess the same number as me you win!\nI'll give you hints along the way.\nIf you guess a number right I'll say FERMI!\nIf you get a number right but out of order I'll say PICO.\nIf you just don't get it I'll say BAGEL!")
+		print("Lets begin!")
 	}
-	/// generates the random `number` for the game. Returning struct `number`
-	private func generateRandomNumber()->number{
-		let first = Int.random(in: 1 ..< 10)
-		let second = Int.random(in: 1 ..< 10)
-		let third = Int.random(in: 1 ..< 10)
-		return number(first: first, second: second, Third: third)
+	
+	/// Asks the player if they would like to play again. 1 for yes. 0 for no.
+	fileprivate func wouldYouliketoplayagain() {
+		print("Would you like to play again?\nYes!(1)\nNo(0)")
+		let keyboad = readLine(strippingNewline: true) ?? ""
+		let response: responses = responses(rawValue: Int(keyboad) ?? 3) ?? .oops
+		switch response {
+		case .yes:
+			playGame()
+		case .no:
+			print("Thanks for playing!")
+			exit(1)
+		default:
+			print("Oops try again?")
+			wouldYouliketoplayagain()
+		}
 	}
+	
+	/// Console gets sassy if you take too many tries to win
+	/// - Parameter numberOfGuesses: number of times the player guessed a number
+	fileprivate func snarkyGameWinText(_ numberOfGuesses: Int) {
+		if numberOfGuesses > 3{
+			print("Congratulations YOU WON! Only took you \(numberOfGuesses) tries! 😜")
+		}
+		else if numberOfGuesses < 3{
+			print("WOW! YOU WON in just \(numberOfGuesses) guesses!")
+		}
+	}
+
+	
 }
