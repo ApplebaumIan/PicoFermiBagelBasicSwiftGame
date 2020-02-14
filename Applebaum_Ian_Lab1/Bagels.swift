@@ -22,7 +22,7 @@ class Bagels {
 	These can be compared simply by
 	~~~
 	if guess == randomNumber{
-		print("numbers match")
+	print("numbers match")
 	}
 	~~~
 	*/
@@ -84,17 +84,13 @@ class Bagels {
 	fileprivate func checkSecondGuess(_ guess: Bagels.number, _ randomNumber: Bagels.number, _ result: inout String) -> hints{
 		switch guess.second {
 		case randomNumber.second:
-//			result.append(" FERMI")
 			return .fermi
 		case randomNumber.first:
-//			result.append(" PICO")
 			return .pico
 		case randomNumber.Third:
-//			result.append(" PICO")
 			return .pico
 		default:
 			return .bagels
-//			result.append(" BAGELS")
 		}
 	}
 	/// Add FERMI to the result String
@@ -165,7 +161,7 @@ class Bagels {
 		guess = number(first: first, second: second, Third: third)
 		inputErrorTrapping(&guess, first, second)
 	}
-
+	
 	
 	/// checks player's guesses for pico (guessed right number but out of order). If it contains pico then it adds the `hint` to `results`
 	/// - Parameters:
@@ -286,6 +282,6 @@ class Bagels {
 			print("WOW! YOU WON in just \(numberOfGuesses) guesses!")
 		}
 	}
-
+	
 	
 }
