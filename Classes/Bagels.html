@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bagels Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+	<meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0" />
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/Bagels" class="dashAnchor"></a>
+    <a title="Bagels Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p>
+          <a href="../index.html"> Docs</a>
+          <span class="no-mobile"> (56% documented)</span>
+        </p>
+    
+    
+      </div>
+    </header>
+    <div id="breadcrumbs-container">
+      <div class="content-wrapper">
+        <p id="breadcrumbs">
+          <span class="no-mobile">
+            <a href="../index.html"> Reference</a>
+            <img id="carat" src="../img/carat.png" />
+          </span>
+          Bagels Class Reference
+        </p>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="article-wrapper">
+        <article class="main-content">
+          <section>
+            <section class="section">
+              <h1>Bagels</h1>
+                <div class="declaration">
+                  <div class="language">
+                    <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">Bagels</span></code></pre>
+
+                  </div>
+                </div>
+              <p>Undocumented</p>
+
+            </section>
+            <section class="section task-group-section">
+              <div class="task-group">
+                <div class="task-name-container">
+                  <a name="/Game%20data%20structures"></a>
+                  <a name="//apple_ref/swift/Section/Game data structures" class="dashAnchor"></a>
+                  <div class="section-name-container">
+                    <a class="section-name-link" href="#/Game%20data%20structures"></a>
+                    <h3 class="section-name"><p>Game data structures</p>
+</h3>
+                  </div>
+                </div>
+                <ul>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/s:18Applebaum_Ian_Lab16BagelsC6numberV"></a>
+                      <a name="//apple_ref/swift/Struct/number" class="dashAnchor"></a>
+                      <a class="token" href="#/s:18Applebaum_Ian_Lab16BagelsC6numberV">number</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Player&rsquo;s guess:</p>
+<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">guess</span> <span class="o">=</span> <span class="nf">number</span><span class="p">(</span><span class="nv">first</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="nv">second</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="kt">Third</span><span class="p">:</span> <span class="mi">1</span><span class="p">)</span>
+</code></pre>
+
+<p>The computer could generate a number for comparison:</p>
+<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">randomNumber</span> <span class="o">=</span> <span class="nf">number</span><span class="p">(</span><span class="nv">first</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="nv">second</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="kt">Third</span><span class="p">:</span> <span class="mi">6</span><span class="p">)</span>
+</code></pre>
+
+<p>These can be compared simply by</p>
+<pre class="highlight swift"><code><span class="k">if</span> <span class="n">guess</span> <span class="o">==</span> <span class="n">randomNumber</span><span class="p">{</span>
+<span class="nf">print</span><span class="p">(</span><span class="s">"numbers match"</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre>
+
+                          <a href="../Classes/Bagels/number.html" class="slightly-smaller">See more</a>
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Swift</p>
+                            <pre class="highlight swift"><code><span class="kd">struct</span> <span class="nv">number</span> <span class="p">:</span> <span class="kt">Equatable</span></code></pre>
+
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/s:18Applebaum_Ian_Lab16BagelsC9responsesO"></a>
+                      <a name="//apple_ref/swift/Enum/responses" class="dashAnchor"></a>
+                      <a class="token" href="#/s:18Applebaum_Ian_Lab16BagelsC9responsesO">responses</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Simple Enum for yes or no responses</p>
+
+                          <a href="../Classes/Bagels/responses.html" class="slightly-smaller">See more</a>
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Swift</p>
+                            <pre class="highlight swift"><code><span class="kd">enum</span> <span class="nv">responses</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/s:18Applebaum_Ian_Lab16BagelsC5hintsO"></a>
+                      <a name="//apple_ref/swift/Enum/hints" class="dashAnchor"></a>
+                      <a class="token" href="#/s:18Applebaum_Ian_Lab16BagelsC5hintsO">hints</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>The hint to the user</p>
+
+                          <a href="../Classes/Bagels/hints.html" class="slightly-smaller">See more</a>
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Swift</p>
+                            <pre class="highlight swift"><code><span class="kd">enum</span> <span class="n">hints</span></code></pre>
+
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="task-group">
+                <div class="task-name-container">
+                  <a name="/Game%20setup"></a>
+                  <a name="//apple_ref/swift/Section/Game setup" class="dashAnchor"></a>
+                  <div class="section-name-container">
+                    <a class="section-name-link" href="#/Game%20setup"></a>
+                    <h3 class="section-name"><p>Game setup</p>
+</h3>
+                  </div>
+                </div>
+                <ul>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/s:18Applebaum_Ian_Lab16BagelsC20generateRandomNumber33_89AEFCCF05B3654182A024F62AD6D180LLAC6numberVyF"></a>
+                      <a name="//apple_ref/swift/Method/generateRandomNumber()" class="dashAnchor"></a>
+                      <a class="token" href="#/s:18Applebaum_Ian_Lab16BagelsC20generateRandomNumber33_89AEFCCF05B3654182A024F62AD6D180LLAC6numberVyF">generateRandomNumber()</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>generates the random <code><a href="../Classes/Bagels/number.html">number</a></code> for the game. Returning struct <code><a href="../Classes/Bagels/number.html">number</a></code></p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Swift</p>
+                            <pre class="highlight swift"><code><span class="kd">private</span> <span class="kd">func</span> <span class="nf">generateRandomNumber</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n"><a href="../Classes/Bagels/number.html">number</a></span></code></pre>
+
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="task-group">
+                <div class="task-name-container">
+                  <a name="/Game%20Logic"></a>
+                  <a name="//apple_ref/swift/Section/Game Logic" class="dashAnchor"></a>
+                  <div class="section-name-container">
+                    <a class="section-name-link" href="#/Game%20Logic"></a>
+                    <h3 class="section-name"><p>Game Logic</p>
+</h3>
+                  </div>
+                </div>
+                <ul>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/s:18Applebaum_Ian_Lab16BagelsC15checkFirstGuess33_89AEFCCF05B3654182A024F62AD6D180LLyAC5hintsOAC6numberV_AISSztF"></a>
+                      <a name="//apple_ref/swift/Method/checkFirstGuess(_:_:_:)" class="dashAnchor"></a>
+                      <a class="token" href="#/s:18Applebaum_Ian_Lab16BagelsC15checkFirstGuess33_89AEFCCF05B3654182A024F62AD6D180LLyAC5hintsOAC6numberV_AISSztF">checkFirstGuess(_:_:_:)</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Checks for the player&rsquo;s first guess Int&lt;10</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Swift</p>
+                            <pre class="highlight swift"><code><span class="kd">fileprivate</span> <span class="kd">func</span> <span class="nf">checkFirstGuess</span><span class="p">(</span><span class="n">_</span> <span class="nv">guess</span><span class="p">:</span> <span class="kt">Bagels</span><span class="o">.</span><span class="n"><a href="../Classes/Bagels/number.html">number</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">randomNumber</span><span class="p">:</span> <span class="kt">Bagels</span><span class="o">.</span><span class="n"><a href="../Classes/Bagels/number.html">number</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">result</span><span class="p">:</span> <span class="k">inout</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n"><a href="../Classes/Bagels/hints.html">hints</a></span></code></pre>
+
+                          </div>
+                        </div>
+                        <div>
+                          <h4>Parameters</h4>
+                          <table class="graybox">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <code>
+                                  <em>guess</em>
+                                  </code>
+                                </td>
+                                <td>
+                                  <div>
+                                    <p>the number the user guessed</p>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <code>
+                                  <em>randomNumber</em>
+                                  </code>
+                                </td>
+                                <td>
+                                  <div>
+                                    <p>number generated by the computer</p>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <code>
+                                  <em>result</em>
+                                  </code>
+                                </td>
+                                <td>
+                                  <div>
+                                    <p>Either FERMI when you guessed right! PICO if the number is right but the wrong order. BAGELS you guessed wrong!</p>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/s:18Applebaum_Ian_Lab16BagelsC16checkSecondGuess33_89AEFCCF05B3654182A024F62AD6D180LLyAC5hintsOAC6numberV_AISSztF"></a>
+                      <a name="//apple_ref/swift/Method/checkSecondGuess(_:_:_:)" class="dashAnchor"></a>
+                      <a class="token" href="#/s:18Applebaum_Ian_Lab16BagelsC16checkSecondGuess33_89AEFCCF05B3654182A024F62AD6D180LLyAC5hintsOAC6numberV_AISSztF">checkSecondGuess(_:_:_:)</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Checks for the player&rsquo;s second guess Int&lt;10</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Swift</p>
+                            <pre class="highlight swift"><code><span class="kd">fileprivate</span> <span class="kd">func</span> <span class="nf">checkSecondGuess</span><span class="p">(</span><span class="n">_</span> <span class="nv">guess</span><span class="p">:</span> <span class="kt">Bagels</span><span class="o">.</span><span class="n"><a href="../Classes/Bagels/number.html">number</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">randomNumber</span><span class="p">:</span> <span class="kt">Bagels</span><span class="o">.</span><span class="n"><a href="../Classes/Bagels/number.html">number</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">result</span><span class="p">:</span> <span class="k">inout</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n"><a href="../Classes/Bagels/hints.html">hints</a></span></code></pre>
+
+                          </div>
+                        </div>
+                        <div>
+                          <h4>Parameters</h4>
+                          <table class="graybox">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <code>
+                                  <em>guess</em>
+                                  </code>
+                                </td>
+                                <td>
+                                  <div>
+                                    <p>the number the user guessed</p>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <code>
+                                  <em>randomNumber</em>
+                                  </code>
+                                </td>
+                                <td>
+                                  <div>
+                                    <p>number generated by the computer</p>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <code>
+                                  <em>result</em>
+                                  </code>
+                                </td>
+                                <td>
+                                  <div>
+                                    <p>Either FERMI when you guessed right! PICO if the number is right but the wrong order. BAGELS you guessed wrong!</p>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/s:18Applebaum_Ian_Lab16BagelsC8addFermi33_89AEFCCF05B3654182A024F62AD6D180LLyySSzF"></a>
+                      <a name="//apple_ref/swift/Method/addFermi(_:)" class="dashAnchor"></a>
+                      <a class="token" href="#/s:18Applebaum_Ian_Lab16BagelsC8addFermi33_89AEFCCF05B3654182A024F62AD6D180LLyySSzF">addFermi(_:)</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Add FERMI to the result String</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Swift</p>
+                            <pre class="highlight swift"><code><span class="kd">fileprivate</span> <span class="kd">func</span> <span class="nf">addFermi</span><span class="p">(</span><span class="n">_</span> <span class="nv">result</span><span class="p">:</span> <span class="k">inout</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                          </div>
+                        </div>
+                        <div>
+                          <h4>Parameters</h4>
+                          <table class="graybox">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <code>
+                                  <em>result</em>
+                                  </code>
+                                </td>
+                                <td>
+                                  <div>
+                                    <p>The result string to hold the hint.</p>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/s:18Applebaum_Ian_Lab16BagelsC7addPICO33_89AEFCCF05B3654182A024F62AD6D180LLyySSzF"></a>
+                      <a name="//apple_ref/swift/Method/addPICO(_:)" class="dashAnchor"></a>
+                      <a class="token" href="#/s:18Applebaum_Ian_Lab16BagelsC7addPICO33_89AEFCCF05B3654182A024F62AD6D180LLyySSzF">addPICO(_:)</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Add PICO to the result string</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Swift</p>
+                            <pre class="highlight swift"><code><span class="kd">fileprivate</span> <span class="kd">func</span> <span class="nf">addPICO</span><span class="p">(</span><span class="n">_</span> <span class="nv">result</span><span class="p">:</span> <span class="k">inout</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                          </div>
+                        </div>
+                        <div>
+                          <h4>Parameters</h4>
+                          <table class="graybox">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <code>
+                                  <em>result</em>
+                                  </code>
+                                </td>
+                                <td>
+                                  <div>
+                                    <p>The result string to hold the hint.</p>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/s:18Applebaum_Ian_Lab16BagelsC03addD033_89AEFCCF05B3654182A024F62AD6D180LLyySSzF"></a>
+                      <a name="//apple_ref/swift/Method/addBagels(_:)" class="dashAnchor"></a>
+                      <a class="token" href="#/s:18Applebaum_Ian_Lab16BagelsC03addD033_89AEFCCF05B3654182A024F62AD6D180LLyySSzF">addBagels(_:)</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Add BAGELS to result string</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Swift</p>
+                            <pre class="highlight swift"><code><span class="kd">fileprivate</span> <span class="kd">func</span> <span class="nf">addBagels</span><span class="p">(</span><span class="n">_</span> <span class="nv">result</span><span class="p">:</span> <span class="k">inout</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                          </div>
+                        </div>
+                        <div>
+                          <h4>Parameters</h4>
+                          <table class="graybox">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <code>
+                                  <em>result</em>
+                                  </code>
+                                </td>
+                                <td>
+                                  <div>
+                                    <p>The result string to hold the hint.</p>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/s:18Applebaum_Ian_Lab16BagelsC15checkThirdGuess33_89AEFCCF05B3654182A024F62AD6D180LLyAC5hintsOAC6numberV_AISSztF"></a>
+                      <a name="//apple_ref/swift/Method/checkThirdGuess(_:_:_:)" class="dashAnchor"></a>
+                      <a class="token" href="#/s:18Applebaum_Ian_Lab16BagelsC15checkThirdGuess33_89AEFCCF05B3654182A024F62AD6D180LLyAC5hintsOAC6numberV_AISSztF">checkThirdGuess(_:_:_:)</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Checks for the player&rsquo;s third guess Int&lt;10</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Swift</p>
+                            <pre class="highlight swift"><code><span class="kd">fileprivate</span> <span class="kd">func</span> <span class="nf">checkThirdGuess</span><span class="p">(</span><span class="n">_</span> <span class="nv">guess</span><span class="p">:</span> <span class="kt">Bagels</span><span class="o">.</span><span class="n"><a href="../Classes/Bagels/number.html">number</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">randomNumber</span><span class="p">:</span> <span class="kt">Bagels</span><span class="o">.</span><span class="n"><a href="../Classes/Bagels/number.html">number</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">result</span><span class="p">:</span> <span class="k">inout</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n"><a href="../Classes/Bagels/hints.html">hints</a></span></code></pre>
+
+                          </div>
+                        </div>
+                        <div>
+                          <h4>Parameters</h4>
+                          <table class="graybox">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <code>
+                                  <em>guess</em>
+                                  </code>
+                                </td>
+                                <td>
+                                  <div>
+                                    <p>the number the user guessed</p>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <code>
+                                  <em>randomNumber</em>
+                                  </code>
+                                </td>
+                                <td>
+                                  <div>
+                                    <p>number generated by the computer</p>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <code>
+                                  <em>result</em>
+                                  </code>
+                                </td>
+                                <td>
+                                  <div>
+                                    <p>Either FERMI when you guessed right! PICO if the number is right but the wrong order. BAGELS you guessed wrong!</p>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/s:18Applebaum_Ian_Lab16BagelsC18inputErrorTrapping33_89AEFCCF05B3654182A024F62AD6D180LLyyAC6numberVz_S2itF"></a>
+                      <a name="//apple_ref/swift/Method/inputErrorTrapping(_:_:_:)" class="dashAnchor"></a>
+                      <a class="token" href="#/s:18Applebaum_Ian_Lab16BagelsC18inputErrorTrapping33_89AEFCCF05B3654182A024F62AD6D180LLyyAC6numberVz_S2itF">inputErrorTrapping(_:_:_:)</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Trap for errors in keyboard input. No 0s are allowed in the game. if a 0 is found it restarts the <code>getUserGuess()</code> to try again.</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Swift</p>
+                            <pre class="highlight swift"><code><span class="kd">fileprivate</span> <span class="kd">func</span> <span class="nf">inputErrorTrapping</span><span class="p">(</span><span class="n">_</span> <span class="nv">guess</span><span class="p">:</span> <span class="k">inout</span> <span class="kt">Bagels</span><span class="o">.</span><span class="n"><a href="../Classes/Bagels/number.html">number</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">first</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="n">_</span> <span class="nv">second</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+
+                          </div>
+                        </div>
+                        <div>
+                          <h4>Parameters</h4>
+                          <table class="graybox">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <code>
+                                  <em>guess</em>
+                                  </code>
+                                </td>
+                                <td>
+                                  <div>
+                                    <p>the <code><a href="../Classes/Bagels/number.html">number</a></code> struct to hold the player&rsquo;s guess.</p>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <code>
+                                  <em>first</em>
+                                  </code>
+                                </td>
+                                <td>
+                                  <div>
+                                    <p>The first number in the player&rsquo;s guess</p>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <code>
+                                  <em>second</em>
+                                  </code>
+                                </td>
+                                <td>
+                                  <div>
+                                    <p>The second number in the player&rsquo;s guess</p>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/s:18Applebaum_Ian_Lab16BagelsC12getUserGuess33_89AEFCCF05B3654182A024F62AD6D180LLyyAC6numberVzF"></a>
+                      <a name="//apple_ref/swift/Method/getUserGuess(_:)" class="dashAnchor"></a>
+                      <a class="token" href="#/s:18Applebaum_Ian_Lab16BagelsC12getUserGuess33_89AEFCCF05B3654182A024F62AD6D180LLyyAC6numberVzF">getUserGuess(_:)</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Get the player&rsquo;s guess from the keyboard and convert it to <code><a href="../Classes/Bagels/number.html">number</a></code> struct</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Swift</p>
+                            <pre class="highlight swift"><code><span class="kd">fileprivate</span> <span class="kd">func</span> <span class="nf">getUserGuess</span><span class="p">(</span><span class="n">_</span> <span class="nv">guess</span><span class="p">:</span> <span class="k">inout</span> <span class="kt">Bagels</span><span class="o">.</span><span class="n"><a href="../Classes/Bagels/number.html">number</a></span><span class="p">)</span></code></pre>
+
+                          </div>
+                        </div>
+                        <div>
+                          <h4>Parameters</h4>
+                          <table class="graybox">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <code>
+                                  <em>guess</em>
+                                  </code>
+                                </td>
+                                <td>
+                                  <div>
+                                    <p>the <code><a href="../Classes/Bagels/number.html">number</a></code> struct to hold the player&rsquo;s guess.</p>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/s:18Applebaum_Ian_Lab16BagelsC12checkForPICO33_89AEFCCF05B3654182A024F62AD6D180LLyyAC5hintsO_SSzA2GtF"></a>
+                      <a name="//apple_ref/swift/Method/checkForPICO(_:_:_:_:)" class="dashAnchor"></a>
+                      <a class="token" href="#/s:18Applebaum_Ian_Lab16BagelsC12checkForPICO33_89AEFCCF05B3654182A024F62AD6D180LLyyAC5hintsO_SSzA2GtF">checkForPICO(_:_:_:_:)</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>checks player&rsquo;s guesses for pico (guessed right number but out of order). If it contains pico then it adds the <code>hint</code> to <code>results</code></p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Swift</p>
+                            <pre class="highlight swift"><code><span class="kd">fileprivate</span> <span class="kd">func</span> <span class="nf">checkForPICO</span><span class="p">(</span><span class="n">_</span> <span class="nv">firstGuess</span><span class="p">:</span> <span class="kt">Bagels</span><span class="o">.</span><span class="n"><a href="../Classes/Bagels/hints.html">hints</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">result</span><span class="p">:</span> <span class="k">inout</span> <span class="kt">String</span><span class="p">,</span> <span class="n">_</span> <span class="nv">secondGuess</span><span class="p">:</span> <span class="kt">Bagels</span><span class="o">.</span><span class="n"><a href="../Classes/Bagels/hints.html">hints</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">thirdGuess</span><span class="p">:</span> <span class="kt">Bagels</span><span class="o">.</span><span class="n"><a href="../Classes/Bagels/hints.html">hints</a></span><span class="p">)</span></code></pre>
+
+                          </div>
+                        </div>
+                        <div>
+                          <h4>Parameters</h4>
+                          <table class="graybox">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <code>
+                                  <em>firstGuess</em>
+                                  </code>
+                                </td>
+                                <td>
+                                  <div>
+                                    <p>Player&rsquo;s first guess <code>hint</code> result.</p>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <code>
+                                  <em>result</em>
+                                  </code>
+                                </td>
+                                <td>
+                                  <div>
+                                    <p>The result string to hold the hint.</p>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <code>
+                                  <em>secondGuess</em>
+                                  </code>
+                                </td>
+                                <td>
+                                  <div>
+                                    <p>Player&rsquo;s second guess <code>hint</code> result</p>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <code>
+                                  <em>thirdGuess</em>
+                                  </code>
+                                </td>
+                                <td>
+                                  <div>
+                                    <p>Player&rsquo;s third guess <code>hint</code> result</p>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/s:18Applebaum_Ian_Lab16BagelsC13checkForFERMI33_89AEFCCF05B3654182A024F62AD6D180LLyyAC5hintsO_SSzA2GtF"></a>
+                      <a name="//apple_ref/swift/Method/checkForFERMI(_:_:_:_:)" class="dashAnchor"></a>
+                      <a class="token" href="#/s:18Applebaum_Ian_Lab16BagelsC13checkForFERMI33_89AEFCCF05B3654182A024F62AD6D180LLyyAC5hintsO_SSzA2GtF">checkForFERMI(_:_:_:_:)</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Checks the players guesses for Fermi (Correct placement of number)</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Swift</p>
+                            <pre class="highlight swift"><code><span class="kd">fileprivate</span> <span class="kd">func</span> <span class="nf">checkForFERMI</span><span class="p">(</span><span class="n">_</span> <span class="nv">firstGuess</span><span class="p">:</span> <span class="kt">Bagels</span><span class="o">.</span><span class="n"><a href="../Classes/Bagels/hints.html">hints</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">result</span><span class="p">:</span> <span class="k">inout</span> <span class="kt">String</span><span class="p">,</span> <span class="n">_</span> <span class="nv">secondGuess</span><span class="p">:</span> <span class="kt">Bagels</span><span class="o">.</span><span class="n"><a href="../Classes/Bagels/hints.html">hints</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">thirdGuess</span><span class="p">:</span> <span class="kt">Bagels</span><span class="o">.</span><span class="n"><a href="../Classes/Bagels/hints.html">hints</a></span><span class="p">)</span></code></pre>
+
+                          </div>
+                        </div>
+                        <div>
+                          <h4>Parameters</h4>
+                          <table class="graybox">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <code>
+                                  <em>firstGuess</em>
+                                  </code>
+                                </td>
+                                <td>
+                                  <div>
+                                    <p>Player&rsquo;s first guess <code>hint</code> result</p>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <code>
+                                  <em>result</em>
+                                  </code>
+                                </td>
+                                <td>
+                                  <div>
+                                    <p>The result string to hold the hint.</p>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <code>
+                                  <em>secondGuess</em>
+                                  </code>
+                                </td>
+                                <td>
+                                  <div>
+                                    <p>Player&rsquo;s second guess <code>hint</code> result</p>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <code>
+                                  <em>thirdGuess</em>
+                                  </code>
+                                </td>
+                                <td>
+                                  <div>
+                                    <p>Player&rsquo;s third guess <code>hint</code> result</p>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/s:18Applebaum_Ian_Lab16BagelsC14checkForBAGELS33_89AEFCCF05B3654182A024F62AD6D180LLyyAC5hintsO_A2GSSztF"></a>
+                      <a name="//apple_ref/swift/Method/checkForBAGELS(_:_:_:_:)" class="dashAnchor"></a>
+                      <a class="token" href="#/s:18Applebaum_Ian_Lab16BagelsC14checkForBAGELS33_89AEFCCF05B3654182A024F62AD6D180LLyyAC5hintsO_A2GSSztF">checkForBAGELS(_:_:_:_:)</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Checks that all of the player&rsquo;s guesses are wron</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Swift</p>
+                            <pre class="highlight swift"><code><span class="kd">fileprivate</span> <span class="kd">func</span> <span class="nf">checkForBAGELS</span><span class="p">(</span><span class="n">_</span> <span class="nv">firstGuess</span><span class="p">:</span> <span class="kt">Bagels</span><span class="o">.</span><span class="n"><a href="../Classes/Bagels/hints.html">hints</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">secondGuess</span><span class="p">:</span> <span class="kt">Bagels</span><span class="o">.</span><span class="n"><a href="../Classes/Bagels/hints.html">hints</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">thirdGuess</span><span class="p">:</span> <span class="kt">Bagels</span><span class="o">.</span><span class="n"><a href="../Classes/Bagels/hints.html">hints</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">result</span><span class="p">:</span> <span class="k">inout</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                          </div>
+                        </div>
+                        <div>
+                          <h4>Parameters</h4>
+                          <table class="graybox">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <code>
+                                  <em>firstGuess</em>
+                                  </code>
+                                </td>
+                                <td>
+                                  <div>
+                                    <p>Player&rsquo;s first guess <code>hint</code> result</p>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <code>
+                                  <em>secondGuess</em>
+                                  </code>
+                                </td>
+                                <td>
+                                  <div>
+                                    <p>Player&rsquo;s second guess <code>hint</code> result</p>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <code>
+                                  <em>thirdGuess</em>
+                                  </code>
+                                </td>
+                                <td>
+                                  <div>
+                                    <p>Player&rsquo;s third guess <code>hint</code> result</p>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <code>
+                                  <em>result</em>
+                                  </code>
+                                </td>
+                                <td>
+                                  <div>
+                                    <p>The result string to hold the hint.</p>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="task-group">
+                <div class="task-name-container">
+                  <a name="/Game%20Play"></a>
+                  <a name="//apple_ref/swift/Section/Game Play" class="dashAnchor"></a>
+                  <div class="section-name-container">
+                    <a class="section-name-link" href="#/Game%20Play"></a>
+                    <h3 class="section-name"><p>Game Play</p>
+</h3>
+                  </div>
+                </div>
+                <ul>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/s:18Applebaum_Ian_Lab16BagelsC8playGameyyF"></a>
+                      <a name="//apple_ref/swift/Method/playGame()" class="dashAnchor"></a>
+                      <a class="token" href="#/s:18Applebaum_Ian_Lab16BagelsC8playGameyyF">playGame()</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          
+<ol>
+<li>Generate the secret number</li>
+<li>Determine whether the current guess is a winner</li>
+<li>Evaluate the current guess and print hints</li>
+</ol>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Swift</p>
+                            <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">playGame</span><span class="p">()</span></code></pre>
+
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/s:18Applebaum_Ian_Lab16BagelsC10printStars33_89AEFCCF05B3654182A024F62AD6D180LLyyF"></a>
+                      <a name="//apple_ref/swift/Method/printStars()" class="dashAnchor"></a>
+                      <a class="token" href="#/s:18Applebaum_Ian_Lab16BagelsC10printStars33_89AEFCCF05B3654182A024F62AD6D180LLyyF">printStars()</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>prints pretty stars in the console</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Swift</p>
+                            <pre class="highlight swift"><code><span class="kd">fileprivate</span> <span class="kd">func</span> <span class="nf">printStars</span><span class="p">()</span></code></pre>
+
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/s:18Applebaum_Ian_Lab16BagelsC7welcome33_89AEFCCF05B3654182A024F62AD6D180LLyyF"></a>
+                      <a name="//apple_ref/swift/Method/welcome()" class="dashAnchor"></a>
+                      <a class="token" href="#/s:18Applebaum_Ian_Lab16BagelsC7welcome33_89AEFCCF05B3654182A024F62AD6D180LLyyF">welcome()</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>prints welcome and instructions</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Swift</p>
+                            <pre class="highlight swift"><code><span class="kd">fileprivate</span> <span class="kd">func</span> <span class="nf">welcome</span><span class="p">()</span></code></pre>
+
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/s:18Applebaum_Ian_Lab16BagelsC23wouldYouliketoplayagain33_89AEFCCF05B3654182A024F62AD6D180LLyyF"></a>
+                      <a name="//apple_ref/swift/Method/wouldYouliketoplayagain()" class="dashAnchor"></a>
+                      <a class="token" href="#/s:18Applebaum_Ian_Lab16BagelsC23wouldYouliketoplayagain33_89AEFCCF05B3654182A024F62AD6D180LLyyF">wouldYouliketoplayagain()</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Asks the player if they would like to play again. 1 for yes. 0 for no.</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Swift</p>
+                            <pre class="highlight swift"><code><span class="kd">fileprivate</span> <span class="kd">func</span> <span class="nf">wouldYouliketoplayagain</span><span class="p">()</span></code></pre>
+
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div>
+                      <code>
+                      <a name="/s:18Applebaum_Ian_Lab16BagelsC17snarkyGameWinText33_89AEFCCF05B3654182A024F62AD6D180LLyySiF"></a>
+                      <a name="//apple_ref/swift/Method/snarkyGameWinText(_:)" class="dashAnchor"></a>
+                      <a class="token" href="#/s:18Applebaum_Ian_Lab16BagelsC17snarkyGameWinText33_89AEFCCF05B3654182A024F62AD6D180LLyySiF">snarkyGameWinText(_:)</a>
+                      </code>
+                    </div>
+                    <div class="height-container">
+                      <div class="pointer-container"></div>
+                      <section class="section">
+                        <div class="pointer"></div>
+                        <div class="abstract">
+                          <p>Console gets sassy if you take too many tries to win</p>
+
+                        </div>
+                        <div class="declaration">
+                          <h4>Declaration</h4>
+                          <div class="language">
+                            <p class="aside-title">Swift</p>
+                            <pre class="highlight swift"><code><span class="kd">fileprivate</span> <span class="kd">func</span> <span class="nf">snarkyGameWinText</span><span class="p">(</span><span class="n">_</span> <span class="nv">numberOfGuesses</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+
+                          </div>
+                        </div>
+                        <div>
+                          <h4>Parameters</h4>
+                          <table class="graybox">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <code>
+                                  <em>numberOfGuesses</em>
+                                  </code>
+                                </td>
+                                <td>
+                                  <div>
+                                    <p>number of times the player guessed a number</p>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </section>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </section>
+        </article>
+      </div>
+      <div class="nav-wrapper">
+        <nav class="nav-bottom">
+          <ul class="nav-groups">
+            <li class="nav-group-name">
+              <a href="../Classes.html">Classes</a>
+              <ul class="nav-group-tasks">
+                <li class="nav-group-task">
+                  <a href="../Classes/Bagels.html">Bagels</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="../Classes/Bagels/number.html">– number</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="../Classes/Bagels/responses.html">– responses</a>
+                </li>
+                <li class="nav-group-task">
+                  <a href="../Classes/Bagels/hints.html">– hints</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-group-name">
+              <a href="../Global%20Variables.html">Global Variables</a>
+              <ul class="nav-group-tasks">
+                <li class="nav-group-task">
+                  <a href="../Global%20Variables.html#/s:18Applebaum_Ian_Lab14gameAA6BagelsCvp">game</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-group-name">
+              <a href="../Extensions.html">Extensions</a>
+              <ul class="nav-group-tasks">
+                <li class="nav-group-task">
+                  <a href="../Extensions/String.html">String</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-wrapper">
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external">Ian</a>. All rights reserved. (Last updated: 2020-02-19)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </div>
+    </div>
+  </body>
+</div>
+</html>

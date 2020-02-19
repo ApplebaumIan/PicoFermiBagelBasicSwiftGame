@@ -1,0 +1,124 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/runner/runners/2.165.2/work/PicoFermiBagelBasicSwiftGame/PicoFermiBagelBasicSwiftGame/Applebaum_Ian_Lab1/Bagels.swift",
+      "line": 10,
+      "symbol": "Bagels",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.165.2/work/PicoFermiBagelBasicSwiftGame/PicoFermiBagelBasicSwiftGame/Applebaum_Ian_Lab1/Bagels.swift",
+      "line": 30,
+      "symbol": "Bagels.number.first",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.165.2/work/PicoFermiBagelBasicSwiftGame/PicoFermiBagelBasicSwiftGame/Applebaum_Ian_Lab1/Bagels.swift",
+      "line": 31,
+      "symbol": "Bagels.number.second",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.165.2/work/PicoFermiBagelBasicSwiftGame/PicoFermiBagelBasicSwiftGame/Applebaum_Ian_Lab1/Bagels.swift",
+      "line": 32,
+      "symbol": "Bagels.number.Third",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.165.2/work/PicoFermiBagelBasicSwiftGame/PicoFermiBagelBasicSwiftGame/Applebaum_Ian_Lab1/Bagels.swift",
+      "line": 36,
+      "symbol": "Bagels.number.printNumber()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.165.2/work/PicoFermiBagelBasicSwiftGame/PicoFermiBagelBasicSwiftGame/Applebaum_Ian_Lab1/Bagels.swift",
+      "line": 42,
+      "symbol": "Bagels.responses.no",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.165.2/work/PicoFermiBagelBasicSwiftGame/PicoFermiBagelBasicSwiftGame/Applebaum_Ian_Lab1/Bagels.swift",
+      "line": 43,
+      "symbol": "Bagels.responses.yes",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.165.2/work/PicoFermiBagelBasicSwiftGame/PicoFermiBagelBasicSwiftGame/Applebaum_Ian_Lab1/Bagels.swift",
+      "line": 44,
+      "symbol": "Bagels.responses.oops",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.165.2/work/PicoFermiBagelBasicSwiftGame/PicoFermiBagelBasicSwiftGame/Applebaum_Ian_Lab1/Bagels.swift",
+      "line": 48,
+      "symbol": "Bagels.hints.fermi",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.165.2/work/PicoFermiBagelBasicSwiftGame/PicoFermiBagelBasicSwiftGame/Applebaum_Ian_Lab1/Bagels.swift",
+      "line": 49,
+      "symbol": "Bagels.hints.pico",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.165.2/work/PicoFermiBagelBasicSwiftGame/PicoFermiBagelBasicSwiftGame/Applebaum_Ian_Lab1/Bagels.swift",
+      "line": 50,
+      "symbol": "Bagels.hints.bagels",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.165.2/work/PicoFermiBagelBasicSwiftGame/PicoFermiBagelBasicSwiftGame/Applebaum_Ian_Lab1/Strings.swift",
+      "line": 13,
+      "symbol": "String.length",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.165.2/work/PicoFermiBagelBasicSwiftGame/PicoFermiBagelBasicSwiftGame/Applebaum_Ian_Lab1/Strings.swift",
+      "line": 17,
+      "symbol": "String.subscript(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.subscript",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.165.2/work/PicoFermiBagelBasicSwiftGame/PicoFermiBagelBasicSwiftGame/Applebaum_Ian_Lab1/Strings.swift",
+      "line": 21,
+      "symbol": "String.substring(fromIndex:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.165.2/work/PicoFermiBagelBasicSwiftGame/PicoFermiBagelBasicSwiftGame/Applebaum_Ian_Lab1/Strings.swift",
+      "line": 25,
+      "symbol": "String.substring(toIndex:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.165.2/work/PicoFermiBagelBasicSwiftGame/PicoFermiBagelBasicSwiftGame/Applebaum_Ian_Lab1/Strings.swift",
+      "line": 29,
+      "symbol": "String.subscript(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.subscript",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.165.2/work/PicoFermiBagelBasicSwiftGame/PicoFermiBagelBasicSwiftGame/Applebaum_Ian_Lab1/main.swift",
+      "line": 12,
+      "symbol": "game",
+      "symbol_kind": "source.lang.swift.decl.var.global",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/runner/runners/2.165.2/work/PicoFermiBagelBasicSwiftGame/PicoFermiBagelBasicSwiftGame"
+}
